@@ -1,8 +1,3 @@
-#
-#   simple_ae.py
-#
-#   Autoencoder tutorial code
-#
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -43,26 +38,38 @@ encoded, decoded = model(x, w_enc, b_enc, w_dec, b_dec)
 # Cost Function basic term
 cross_entropy = -1. * x * tf.log(decoded) - (1. - x) * tf.log(1. - decoded)
 loss = tf.reduce_mean(cross_entropy)
-train_step = tf.train.AdagradOptimizer(0.1).minimize(loss)
+train_step = tf.train.AdamOptimizer(0.001).minimize(loss)
 
 # Train
 init = tf.initialize_all_variables()
 
+# Saving Loss
+tf.summary.scalar("loss", loss)
+# Merging the Summary
+merged_summary = tf.summary.merge_all()
+# Summary Writer
+summary_writer = tf.summary.FileWriter('./graphs/loss', graph=tf.get_default_graph())
+
 with tf.Session() as sess:
     sess.run(init)
+    # Tensor Board Graph
+    writer = tf.summary.FileWriter('./graphs/tb', sess.graph)
     print('Training...')
-    for i in range(300):
+    # Increasing Steps from 10001 to 12001
+    for i in range(12001):
         batch_xs, batch_ys = mnist.train.next_batch(128)
-        train_step.run({x: batch_xs, y_: batch_ys})
-
-        if i % 100 == 0:
-            train_loss = loss.eval({x: batch_xs, y_: batch_ys})
-            print('  step, loss = %6d: %6.3f' % (i, train_loss))
-
+        optimizer, l, summary = sess.run([train_step, loss, merged_summary], feed_dict={x: batch_xs, y_: batch_ys})
+        summary_writer.add_summary(summary, i)
+        if i % 2000 == 0:
+            print("step, loss : ", i, l)
+    # Closing the File Writer
+    writer.close()
     # generate decoded image with test data
     test_fd = {x: mnist.test.images, y_: mnist.test.labels}
     decoded_imgs = decoded.eval(test_fd)
-    print('loss (test) = ', loss.eval(test_fd))
+    lossVal = loss.eval(test_fd)
+    print('loss (test) = ', lossVal)
+
 
 x_test = mnist.test.images
 
