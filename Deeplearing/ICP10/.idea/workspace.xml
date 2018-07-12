@@ -14,8 +14,8 @@
       <file leaf-file-name="stacked_ae.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stacked_ae.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="179" column="35" lean-forward="true" selection-start-line="148" selection-end-line="179" selection-end-column="35" />
+            <state relative-caret-position="222">
+              <caret line="105" column="35" selection-end-line="180" />
               <folding>
                 <element signature="e#148#212#0" expanded="true" />
               </folding>
@@ -38,7 +38,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -192,8 +192,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stacked_ae.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="179" column="35" lean-forward="true" selection-start-line="148" selection-end-line="179" selection-end-column="35" />
+        <state relative-caret-position="222">
+          <caret line="105" column="35" selection-end-line="180" />
           <folding>
             <element signature="e#148#212#0" expanded="true" />
           </folding>
