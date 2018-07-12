@@ -17,7 +17,7 @@ mnist = input_data.read_data_sets("MNIST_data", one_hot=True)
 
 # Training Parameters
 learning_rate = 0.01
-num_steps = 10000
+num_steps = 500
 batch_size = 256
 
 display_step = 100
@@ -57,8 +57,10 @@ def encoder(x):
     # Encoder Hidden layer with sigmoid activation #2
     layer_2 = tf.nn.sigmoid(tf.add(tf.matmul(layer_1, weights['encoder_h2']),
                                    biases['encoder_b2']))
-
-    return layer_2
+    # Encoder Hidden layer with sigmoid activation #3
+    layer_3 = tf.nn.sigmoid(tf.add(tf.matmul(layer_2, weights['encoder_h3']),
+                                   biases['encoder_b3']))
+    return layer_3
 
 
 # Building the decoder
@@ -69,8 +71,10 @@ def decoder(x):
     # Decoder Hidden layer with sigmoid activation #2
     layer_2 = tf.nn.sigmoid(tf.add(tf.matmul(layer_1, weights['decoder_h2']),
                                    biases['decoder_b2']))
-
-    return layer_2
+    # Decoder Hidden layer with sigmoid activation #3
+    layer_3 = tf.nn.sigmoid(tf.add(tf.matmul(layer_2, weights['decoder_h3']),
+                                   biases['decoder_b3']))
+    return layer_3
 
 
 # Construct model
