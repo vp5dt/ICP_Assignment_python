@@ -10,17 +10,44 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Word2Vec.py" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Word2Vec.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Word2Vec/Word2Vec.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-27">
-              <caret line="132" selection-start-line="132" selection-end-line="132" />
+            <state relative-caret-position="459">
+              <caret line="217" column="23" lean-forward="true" selection-start-line="217" selection-start-column="23" selection-end-line="217" selection-end-column="23" />
               <folding>
                 <element signature="e#306#324#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogisticRegression.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../../../Lab Assignments/LAB3/LogisticRegression.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="51" column="51" lean-forward="true" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LR0.5E180.PNG" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Word2Vec/figs/LR0.5E180.PNG">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="LR0.6ES160WS64.PNG" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Word2Vec/figs/LR0.6ES160WS64.PNG">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="LR1.0.PNG" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Word2Vec/figs/LR1.0.PNG">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -69,30 +96,6 @@
               <item name="DeepLearning_Lesson3" type="b2602c69:ProjectViewProjectNode" />
               <item name="DeepLearning_Lesson3" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DeepLearning_Lesson3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DeepLearning_Lesson3" type="462c0819:PsiDirectoryNode" />
-              <item name="Word2Vec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DeepLearning_Lesson3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DeepLearning_Lesson3" type="462c0819:PsiDirectoryNode" />
-              <item name="Word2Vec" type="462c0819:PsiDirectoryNode" />
-              <item name="figs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DeepLearning_Lesson3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DeepLearning_Lesson3" type="462c0819:PsiDirectoryNode" />
-              <item name="Word2Vec" type="462c0819:PsiDirectoryNode" />
-              <item name="graphs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DeepLearning_Lesson3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DeepLearning_Lesson3" type="462c0819:PsiDirectoryNode" />
-              <item name="Word2Vec" type="462c0819:PsiDirectoryNode" />
-              <item name="graphs" type="462c0819:PsiDirectoryNode" />
-              <item name="linear_reg" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -116,7 +119,43 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.LogisticRegression (1)">
+    <configuration name="LogisticRegression (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DeepLearning_Lesson3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../Lab Assignments/LAB3" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../../Lab Assignments/LAB3/LogisticRegression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="LogisticRegression" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DeepLearning_Lesson3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/LogisticRegression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="Word2Vec" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DeepLearning_Lesson3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,8 +174,15 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <list>
+      <item itemvalue="Python.Word2Vec" />
+      <item itemvalue="Python.LogisticRegression" />
+      <item itemvalue="Python.LogisticRegression (1)" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.LogisticRegression (1)" />
+        <item itemvalue="Python.LogisticRegression" />
         <item itemvalue="Python.Word2Vec" />
       </list>
     </recent_temporary>
@@ -156,47 +202,81 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27306002" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4566929" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.23352855" side_tool="true" visible="true" weight="0.42834646" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8653001" weight="0.32440946" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" weight="0.42834646" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.76647145" visible="true" weight="0.42834646" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../../.." />
+    </ignored-roots>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../../Lesson1/ICP1/venv/Lib/site-packages/tensorflow/python/training/adam.py">
+    <entry file="file://$PROJECT_DIR$/Word2Vec/Word2Vec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+        <state relative-caret-position="2057">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+          <folding>
+            <element signature="e#306#324#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Lesson1/ICP1/venv/Lib/site-packages/tensorflow/python/training/adam.py" />
+    <entry file="file://$PROJECT_DIR$/Word2Vec/Word2Vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="217" column="23" lean-forward="true" selection-start-line="217" selection-start-column="23" selection-end-line="217" selection-end-column="23" />
+          <folding>
+            <element signature="e#306#324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word2Vec/figs/LR0.5E180.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word2Vec/figs/LR0.6ES160WS64.PNG">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Word2Vec/figs/LR1.0.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Word2Vec/Word2Vec.py">
+    <entry file="file://$USER_HOME$/Downloads/LogisticRegression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        <state relative-caret-position="-748">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding>
-            <element signature="e#306#324#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Lab Assignments/LAB3/LogisticRegression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="51" column="51" lean-forward="true" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

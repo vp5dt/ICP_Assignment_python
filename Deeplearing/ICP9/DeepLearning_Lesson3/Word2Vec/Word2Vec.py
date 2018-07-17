@@ -21,15 +21,15 @@ import tensorflow as tf
 
 # # Step 1: The data.
 data_dir = "data"
-data_url = 'http://mattmahoney.net/dc/text8.zip'
+data_url = 'http://mattmahoney.net/dc/enwik8.zip'
 
 
 def fetch_words_data(url=data_url, words_data=data_dir):
     # Make the Dir if it does not exist
     os.makedirs(words_data, exist_ok=True)
 
-    # Path to zip file 
-    zip_path = os.path.join(words_data, "words.zip")
+    # Path to zip file
+    zip_path = os.path.join(words_data, "enwik8.zip")
 
     # If the zip file isn't there, download it from the data url
     if not os.path.exists(zip_path):
@@ -40,7 +40,7 @@ def fetch_words_data(url=data_url, words_data=data_dir):
         data = f.read(f.namelist()[0])
 
     # Return a list of all the words in the data source.
-    return data.decode("ascii").split()
+    return data.decode('utf-8').split()
 
 
 # Use Defaults (this make take awhile!!)
@@ -55,7 +55,7 @@ for w in words[9000:9040]:
 
 ## Build Word Counts and Create Word Data and Vocab
 
-def create_counts(vocab_size=50000):
+def create_counts(vocab_size=5000):
     # Begin adding vocab counts with Counter
     vocab = [] + Counter(words).most_common(vocab_size)
 
@@ -67,7 +67,7 @@ def create_counts(vocab_size=50000):
     return data, vocab
 
 
-vocab_size = 50000
+vocab_size = 5000
 
 # This may take awhile
 data, vocabulary = create_counts(vocab_size=vocab_size)
@@ -114,7 +114,7 @@ batch, labels = generate_batch(8, 2, 1)
 batch_size = 128
 
 # Dimension of embedding vector
-embedding_size = 160
+embedding_size = 150
 
 # How many words to consider left and right (the bigger, the longer the training)
 skip_window = 1
@@ -127,12 +127,7 @@ num_skips = 2
 # construction are also the most frequent.
 
 # Random set of words to evaluate similarity on.
-"""
-More Window Size --> Less Computation
-It depends on the material we are using for training ,if window size of 2 can capture the context of a word , 
-but 5 is choose , it will decrease the quality of the learnt model ,and vise versa
-"""
-valid_size = 64
+valid_size = 16
 
 # Only pick dev samples in the head of the distribution.
 valid_window = 100
@@ -141,10 +136,11 @@ valid_examples = np.random.choice(valid_window, valid_size, replace=False)
 # Number of negative examples to sample.
 num_sampled = 64
 
+# Model Learning Rate
 learning_rate = 0.01
 
 # How many words in vocab
-vocabulary_size = 50000
+vocabulary_size = 5000
 
 # ## TensorFlow Placeholders and Constants
 
@@ -179,7 +175,7 @@ loss = tf.reduce_mean(
 # ### Optimizer
 
 # Construct the Adam optimizer
-optimizer = tf.train.AdamOptimizer(learning_rate=0.6)
+optimizer = tf.train.AdamOptimizer(learning_rate=0.01)
 trainer = optimizer.minimize(loss)
 
 # Compute the cosine similarity between minibatch examples and all embeddings.
@@ -194,12 +190,11 @@ init = tf.global_variables_initializer()
 # # Session
 # Usually needs to be quite large to get good results,
 # training takes a long time!
-num_steps = 2000
+num_steps = 500
 
 with tf.Session() as sess:
     sess.run(init)
-    # Tensor Board Graph
-    # writer = tf.summary.FileWriter('./graphs/linear_reg', sess.graph)
+    writer = tf.summary.FileWriter("./graphs", sess.graph)
     average_loss = 0
     for step in range(num_steps):
 
@@ -211,11 +206,11 @@ with tf.Session() as sess:
         empty, loss_val = sess.run([trainer, loss], feed_dict=feed_dict)
         average_loss += loss_val
 
-        if step % 1000 == 0:
+        if step % 100 == 0:
             if step > 0:
-                average_loss /= 1000
+                average_loss /= 100
             # The average loss is an estimate of the loss over the last 1000 batches.
-            print("Average loss at step ", step, ": ", average_loss)
+            print("\n Average loss at step ", step, ": ", average_loss)
             average_loss = 0
 
     final_embeddings = normalized_embeddings.eval()
